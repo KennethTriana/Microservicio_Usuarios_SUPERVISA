@@ -7,7 +7,7 @@ import uuid
 Base = declarative_base()
 
 class User(Base):
-    __tablename__ = "Tb_Usuario"  # Nombre exacto en la BD
+    __tablename__ = "Tb_Usuario"  
     __table_args__ = {"schema": "Usuarios"} 
 
     id = Column(UNIQUEIDENTIFIER, primary_key=True, default=uuid.uuid4)
